@@ -9,26 +9,14 @@
       height: 50px;
     }
   </style>
-  <script type="text/javascript">
-    var paddingTop = 0;
-    function doOnmouseover() {
-      console.log('навели мышь');
-      var elements = document.getElementsByClassName("my_circle");
-      console.log('elements', elements);
-      var myElement = elements[0];
-      console.log('myElement', myElement);
-      paddingTop += 50;
-      console.log('padding_top', paddingTop);
-      var paddingPx = paddingTop + 'px';
-      console.log('padding', paddingPx);
-      myElement.style.paddingTop = paddingPx;
-    }
-  </script>
+
+
+
 </head>
 <body>
   <h1>onmouseover</h1>
   <p>наведите мышь на круг</p>
-  <div class="my_circle" onmouseover="doOnmouseover()">
+  <div class="my_circle">
     <svg width="50" height="50">
       <circle cx="25" cy="25" r="25" />
     </svg>
