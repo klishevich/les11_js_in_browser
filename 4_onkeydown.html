@@ -5,14 +5,16 @@
   <title>onkeydown</title>
   <script type="text/javascript">
     function addElement() {
-
-
+      var mainElement = document.getElementById('main');
+      var newDiv = document.createElement('div');
+      newDiv.innerHTML = 'новый текст';
+      mainElement.appendChild(newDiv);
     }
   </script>
 </head>
 <body>
   <h1>onkeydown</h1>
-  Некоторый текст: 
+  Некоторый текст: <input type="text" name="fname" onkeydown="addElement()">
   <div id="main">
   </div>
 
