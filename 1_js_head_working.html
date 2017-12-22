@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <title>Подключение JS в head которое работает</title>
   <script>
-
-
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Хочу добавить этот текст в элемент с id=demo";
+    }
   </script>
 </head>
 <body>
   <h1>Подключение JS в head которое работает</h1>
   <p>Ниже элемент с id=demo</p>
-
-
+  <p id="demo"></p>
+  <button type="button" onclick="myFunction()">Нажми кнопку</button>
 </body>
 </html>
